@@ -1,0 +1,240 @@
+iframe {
+    pointer-events: none !important;
+    display: none !important;
+}
+
+.inactive {
+    pointer-events: none;
+}
+
+.viewType {
+    border: 1px solid #ccc;
+    width: 50px;
+    padding: 6px;
+}
+
+.card-header {
+    background-color: var(--bs-card-bg);
+}
+
+body[data-layout="detached"] #layout-wrapper::before {
+    height: 70px; // 165 to 70*
+}
+
+body[data-layout="detached"] #layout-wrapper::after {
+    height: 70px; // 180 to 70*
+}
+
+
+.w-150 {
+    min-width: 150px;
+}
+
+.rdt_Table {
+    .rdt_TableHead {
+        z-index: 0;
+    }
+}
+
+#customDropdown {
+    opacity: 1 !important;
+    pointer-events: visible !important;
+    //     position: absolute !important;
+    //     left: -205px !important;
+}
+
+.view-type {
+    border-color: hsl(0, 0%, 80%);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 3px;
+}
+
+.popover-body {
+    box-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.12);
+}
+
+.popover-item {
+    padding: 5px 0px;
+}
+
+.textChip {
+    padding: 2px 8px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.card-shadow {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px - 1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px
+}
+
+.invalid-feedback {
+    display: block !important;
+}
+
+
+.accept {
+    border-color: #107c10 !important;
+}
+
+.reject {
+    border-color: #222121 !important;
+}
+
+
+.droparea {
+    text-align: center;
+    padding: 20px;
+    border: 1px dashed #adb5bd;
+    background-color: #fafafa;
+    color: #bdbdbd;
+    margin-bottom: 10px;
+}
+
+.file-preview {
+    padding: 10px;
+    width: 120px;
+    position: relative;
+    margin: 5px;
+
+    svg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        fill: $danger;
+        stroke: $white;
+        cursor: pointer;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.react-tel-input {
+    .form-control {
+        width: 100% !important;
+    }
+}
+
+.inactive {
+    color: rgba($black, 0.6) !important;
+}
+
+
+/*------- Profile Pic -----*/
+
+.profile-container {
+    position: relative;
+
+    .profileCover {
+        width: 150px; //100%;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: fill;
+    }
+
+    .avatar-upload {
+        position: absolute;
+        z-index: 1;
+        top: 110px;
+        left: calc(75%);
+
+        input {
+            display: none;
+
+            +span {
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                margin-bottom: 0;
+                border-radius: 50%;
+                background: #FFFFFF;
+                border: 1px solid #d2d6de;
+                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+                cursor: pointer;
+                transition: all .2s ease-in-out;
+
+                &:hover {
+                    background: #f1f1f1;
+                    border-color: #d6d6d6;
+                }
+
+                &:after {
+                    content: url(../images/Camera-Icon.svg);
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    margin: auto;
+                    top: 5px;
+                }
+            }
+        }
+    }
+
+    .invalid-feedback {
+        display: block !important;
+    }
+}
+
+/* Input Tag Css Start */
+
+.react-tagsinput {
+    border: 1px solid #ccc !important;
+    border-radius: 3px;
+}
+
+.react-tagsinput-tag {
+    background-color: #cfd2f0;
+    border-radius: 5px;
+    border: 1px solid #b8b8b8;
+    color: #2D31FA;
+}
+
+.react-tagsinput-input {
+    width: 200px;
+}
+
+.react-tagsinput--focused {
+    border-color: #b8b8b8;
+}
+
+.invalid-error {
+    border: 1px solid #ff715b !important;
+    border-radius: 3px !important;
+}
+
+.react-tagsinput-remove {
+    background: rgb(241, 41, 41);
+    padding: 0px 3px 0px 0px;
+    color: white;
+    margin-left: 5px;
+    border-radius: 50px;
+}
+
+/* React Date Picker */
+
+.react-date-picker__wrapper {
+    border: 0 !important;
+}
+
+.react-date-picker__button {
+    padding: 0 !important;
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size: 18px;
+    color: $gray-600
+}
+
+.react-calendar__tile--active {
+    background: $blue !important;
+    color: white;
+}
+
+.react-calendar__tile--now {
+    background: $blue-300 !important;
+    color: white;
+}
